@@ -9,7 +9,7 @@ namespace apiOXXO.Controllers;
 
 public class NivelesController : ControllerBase
 {
-    [HttpGet("GetPrecio/{nivel}")]
+    [HttpGet("GetNivel/{nivel}")]
     public Niveles GetNiveles(int nivel)
     {
         Niveles resnivel = new Niveles();
