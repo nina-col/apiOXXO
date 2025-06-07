@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bruno\\OneDrive\\Documentos\\api\\apiOXXO\\apiOXXO.csproj": {}
+    "C:\\Users\\Magda\\Documents\\GitHub\\apiOXXO\\apiOXXO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bruno\\OneDrive\\Documentos\\api\\apiOXXO\\apiOXXO.csproj": {
+    "C:\\Users\\Magda\\Documents\\GitHub\\apiOXXO\\apiOXXO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bruno\\OneDrive\\Documentos\\api\\apiOXXO\\apiOXXO.csproj",
+        "projectUniqueName": "C:\\Users\\Magda\\Documents\\GitHub\\apiOXXO\\apiOXXO.csproj",
         "projectName": "apiOXXO",
-        "projectPath": "C:\\Users\\bruno\\OneDrive\\Documentos\\api\\apiOXXO\\apiOXXO.csproj",
-        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bruno\\OneDrive\\Documentos\\api\\apiOXXO\\obj\\",
+        "projectPath": "C:\\Users\\Magda\\Documents\\GitHub\\apiOXXO\\apiOXXO.csproj",
+        "packagesPath": "C:\\Users\\Magda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Magda\\Documents\\GitHub\\apiOXXO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Magda\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
