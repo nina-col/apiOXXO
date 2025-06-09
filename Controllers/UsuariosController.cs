@@ -108,5 +108,21 @@ public class UsuariosController : ControllerBase
 
         cmd.ExecuteNonQuery();
     }
+
+    [HttpPut("Updatemonedas/{id_usuario}/{monedas}")]
+    public void UpdateMonedas(int id_usuario, int monedas)
+    {
+        string ConnectionString = "Server=127.0.0.1;Port=3306;Database=reto_oxxo;Uid=root";
+        MySqlConnection conexion = new MySqlConnection(ConnectionString);
+        conexion.Open();
+
+        MySqlCommand cmd = new MySqlCommand("UPDATE USUARIOS SET monedas = @monedas WHERE id_usuario = @id_usuario", conexion);
+        cmd.Parameters.AddWithValue("@monedas", monedas);
+        cmd.Parameters.AddWithValue("@id_usuario", id_usuario);
+
+        cmd.Prepare();
+
+        cmd.ExecuteNonQuery();
+    }
 }
 
