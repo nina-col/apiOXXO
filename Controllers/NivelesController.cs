@@ -13,16 +13,13 @@ public class NivelesController : ControllerBase
     public Niveles GetNivelesimg(int nivel)
     {
         Niveles resnivel = new Niveles();
-
         string ConnectionString = "Server=127.0.0.1;Port=3306;Database=reto_oxxo;Uid=root";
 
         MySqlConnection conexion = new MySqlConnection(ConnectionString);
-
         conexion.Open();
 
         MySqlCommand cmd = new MySqlCommand("SELECT liga_nivel, nivel FROM niveles WHERE nivel = @nivel", conexion);
         cmd.Parameters.AddWithValue("@nivel", nivel);
-
         cmd.Prepare();
 
         using (var reader = cmd.ExecuteReader())
@@ -32,7 +29,6 @@ public class NivelesController : ControllerBase
 
                 resnivel.liga_nivel = reader["liga_nivel"].ToString();
                 resnivel.nivel = Convert.ToInt32(reader["nivel"]);
-             
             }
         }
 
