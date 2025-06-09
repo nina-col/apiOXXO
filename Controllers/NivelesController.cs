@@ -9,8 +9,8 @@ namespace apiOXXO.Controllers;
 
 public class NivelesController : ControllerBase
 {
-    [HttpGet("GetNivel/{nivel}")]
-    public Niveles GetNiveles(int nivel)
+    [HttpGet("GetNivelimg/{nivel}")]
+    public Niveles GetNivelesimg(int nivel)
     {
         Niveles resnivel = new Niveles();
 
@@ -20,7 +20,7 @@ public class NivelesController : ControllerBase
 
         conexion.Open();
 
-        MySqlCommand cmd = new MySqlCommand("SELECT liga_nivel FROM niveles WHERE nivel = @nivel", conexion);
+        MySqlCommand cmd = new MySqlCommand("SELECT liga_nivel, nivel FROM niveles WHERE nivel = @nivel", conexion);
         cmd.Parameters.AddWithValue("@nivel", nivel);
 
         cmd.Prepare();
@@ -29,8 +29,9 @@ public class NivelesController : ControllerBase
         {
             if (reader.Read())
             {
-            
+
                 resnivel.liga_nivel = reader["liga_nivel"].ToString();
+                resnivel.nivel = Convert.ToInt32(reader["nivel"]);
              
             }
         }
